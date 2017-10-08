@@ -1,0 +1,57 @@
+<!-- <view class="content" wx:if="{{jstatus == 1}}">  -->
+<text class="voucher" bindtap='voucher'>查看宿舍凭证</text>
+<view class="content">
+
+    <view wx:for="{{alreadyLive}}">
+        <view class="wode_item_wrap">
+            <view class="wode_item">
+                <view class="messageView">
+                    <view><text> 姓名:</text></view>
+                    <view><text>{{item.name}}</text> </view>
+                </view>
+                <view class="messageViewRight">
+                    <view> <text>床号:</text></view>
+                    <view> <text>{{item.bed}}</text></view>
+                </view>
+            </view>
+            <view class="wode_item">
+                <view class="messageView">
+                    <view> <text>电话:</text></view>
+                    <view> <text>{{item.phone}}</text></view>
+                </view>
+                <view class="messageViewRight">
+                    <view> <text>QQ:</text></view>
+                    <view><text> {{item.qq}}</text></view>
+                </view>
+            </view>
+            <view class="wode_item">
+                <view class="messageView">
+                    <view><text> 专业:</text></view>
+                    <view><text> {{item.majorname}}</text></view>
+                </view>
+                <view class="messageViewRight">
+                    <view> <text>班级:</text></view>
+                    <view> <text>{{item.class}}</text></view>
+                </view>
+            </view>
+            <view class="wode_item fixedHeight" bindtap="tap_Username">
+                <text> 地区:</text>
+                <view class="wode_item_Info">{{item.address}}</view>
+            </view>
+            <view class="wode_item tag tagPosition">
+                <text>个性标签:</text>
+                <view class="wode_item_Info tagView {{item.showStatus ? 'showView ': ''}}">
+                    <!--<text class="details" wx:if="{{item.showStatus}}" data-id="{{index}}" bindtap="show" hidden="{{item.hide}}">详情</text>
+          <text class="details" wx:else bindtap="hide" data-id="{{index}}"  hidden="{{item.hide}}">隐藏</text>-->
+                    <block wx:for="{{item.tag}}">
+                        <text>{{item.name}}</text>
+                    </block>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<button class="again" bindtap="again">重新选择宿舍</button>
+<!-- <view class="notJf" wx:else>
+{{notJs}}
+</view> -->

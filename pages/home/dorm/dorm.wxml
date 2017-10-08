@@ -1,0 +1,111 @@
+<!--pages/home/dorm/dorm.wxml-->
+<view class="notJf" wx:if="{{jstatus != 1}}">
+  {{notJs}}
+</view>
+<view class="container" wx:else>
+  <view class="page-body">
+      <view class="page-section">
+      <view class="weui-cells__title">选择楼</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="storeyChange" value="{{storeyIndex}}" range="{{storeyArr}}">
+              <view class="weui-input">{{storeyArr[storeyIndex]}}
+                <text wx:if="{{storeyIndex!=-1}}">号楼</text>
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">选择楼层</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="floorChange" value="{{floorIndex}}" range="{{floorArr}}">
+              <view class="weui-input">{{floorArr[floorIndex]}}
+                <text wx:if="{{floorIndex !=-1}}">层</text>
+              </view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section">
+      <view class="weui-cells__title">选择宿舍</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="roomChange" value="{{roomIndex}}" range="{{roomArr}}">
+              <view class="weui-input">{{roomArr[roomIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">选择床位</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">当前选择</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bedChange" value="{{bedIndex}}" range="{{bedArr}}">
+              <view class="weui-input">{{bedArr[bedIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="page-section">
+      <view class="weui-cells__title">当前入住人员</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+
+          <!--<view class="weui-cell__hd">
+          <view class="weui-label">当前选择</view>
+        </view>-->
+          <view class="weui-cell__bd alreadyLive">
+            <text wx:if="{{alreadyLive.length == 0}}" class="weui-input">当前没有学生选择此宿舍</text>
+            <block wx:for="{{alreadyLive}}">
+              <view class="alreadyLiveStudent">
+                <view>
+                  <text class="name">姓名：</text>
+                  <text>{{item.name}}</text>
+                </view>
+                <view>
+                  <text class="name">专业：</text>
+                  <text>{{item.majorname}}</text>
+                </view>
+
+                <view>
+                  <text class="name">地址：</text>
+                  <text>{{item.address}}</text>
+                </view>
+                <view>
+                  <text class="name">个性标签：</text>
+                  <block wx:for="{{item.tag}}">
+                    <text class="tag">{{item.name}}</text>
+                  </block>
+                </view>
+              </view>
+            </block>
+          </view>
+        </view>
+      </view>
+    </view>
+    <button class="sureButton" bindtap="sureCheck">确认入住此宿舍</button>
+  </view>
+</view>

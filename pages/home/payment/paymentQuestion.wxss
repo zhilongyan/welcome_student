@@ -1,0 +1,14 @@
+/* pages/home/payment/paymentQuestion.wxss */
+.container{
+  padding: 0;
+  margin: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+page{
+  font-size: 30rpx;
+  letter-spacing: 0;
+}
+

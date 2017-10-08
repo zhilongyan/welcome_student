@@ -1,0 +1,5 @@
+<!--pages/me/suerDorm/sureDorm.wxml-->
+<view class="container">
+<text class="big" wx:if="{{sureDorm}}">已成功入住宿舍</text>
+<button type="primary" bindtap="sure" class="sure" disabled="{{status}}" wx:else>确认入住宿舍</button>
+</view>

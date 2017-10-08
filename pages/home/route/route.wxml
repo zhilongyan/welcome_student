@@ -1,0 +1,31 @@
+
+<!--pages/home/route/route.wxml-->
+<view>
+  <form class="login-form">
+
+    <!--聚焦功能-->
+    <view class="input-group {{userid_focus ? 'active' : ''}}">
+      <text class="input-label">出发点</text>
+      <input cursor-spacing="30" id="userid" placeholder="{{start}}" bindinput="start" />
+    </view>
+    <view class="input-group {{userid_focus ? 'active' : ''}}">
+      <text class="input-label">终点</text>
+      <input cursor-spacing="30" id="userid" bindinput="end" value="{{end}}" />
+    </view>
+  </form>
+  <view class="confirm-btn" bindtap="query">
+    <text>查询</text>
+  </view>
+  <block wx:for="{{message}}">
+    <view class='way'>
+      <view class="header">
+        <view>方案{{index+1}} ：</view>
+        <view class="top" bindtap="top" data-id="{{item.id}}" data-index="{{index}}">
+          <image src="{{item.click?'/image/like_red.png':'/image/like.png'}}" class="like"></image>
+          <text>{{item.top}}</text>
+        </view>
+      </view>
+      <view class="detail">{{item.way}}</view>
+    </view>
+  </block>
+</view>

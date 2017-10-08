@@ -1,0 +1,4 @@
+<!--pages/me/resport/resport.wxml-->
+<view class="content">
+<button type="primary" bindtap="report" disabled="{{disabled}}">确认报到</button>
+</view>

@@ -1,0 +1,225 @@
+<!-- <view class="head">
+  <view class="headImage">
+    <image src="/image/money.png"></image>
+  </view>
+
+  <text>国家助学金</text>
+</view>
+
+<view class="smalltitle">{{smalltitle1}}</view>
+<view class="word">{{standard}}</view>
+
+<view class="smalltitle">{{smalltitle2}}</view>
+<view class="word">{{way}}</view>
+
+<view class="smalltitle">{{smalltitle3}}</view>
+<view class="word">{{word}}</view>
+
+
+<view class="smalltitle">{{smalltitle4}}</view>
+<view class="word">
+  <view class="need1">{{need1}}</view>
+  <view class="need2">{{need2}}</view>
+  <view class="need3">{{need3}}</view>
+  <view class="need4">{{need4}}</view>
+  <view class="need5">{{need5}}</view>
+  <view class="need6">{{need6}}</view>
+  <view class="need7">{{need7}}</view>
+</view> -->
+<view class="container">
+  <view class="head">
+    <image src="/image/money.jpg" mode="widthFix"></image>
+  </view>
+  <view class="body">
+    <view class="country">
+      <view class="name">1.国家奖学金</view>
+      <view class="content">
+        <view class="contentView">
+          <view class="span">奖励对象:</view>
+          <view class="classname">特别优秀的二年级以上（含二年级）的全日制普通高校本专科（含高职、第二学 士学位）在校生。</view>
+        </view>
+        <view class="contentView">
+          <view class="span">奖励标准:</view>
+          <view class="classname">每人每年8000元。</view>
+        </view>
+        <view class="contentView">
+          <view class="span">申请方式:</view>
+          <view class="classname">每年9月份，学生向所在高校申请。</view>
+        </view>
+
+      </view>
+    </view>
+    <view class="school">
+      <view class="name">我校政策</view>
+      <view class="content">
+        <view>全国学生资助管理中心发布的《高等学校学生资助政策简介（本专科学生）》相关要求；</view>
+        <view>我校要求学生上一学年学习成绩排名在同年级同专业范围内位于前10%，且没有不及格科目，同时上一学年综合测评成绩排名也必须在同年级同专业范围内位于前10%，社会实践、创新能力、综合素质等方面特别突出。</view>
+
+      </view>
+    </view>
+    <view class="country">
+      <view class="name">2.国家励志奖学金</view>
+      <view class="content">
+        <view class="contentView">
+          <view class="span">奖励对象:</view>
+          <view class="classname">品学兼优、家庭经济困难的二年级以上（含二年级）的全日制普通高校本专科（含高职、第二学士学位）在校生。</view>
+        </view>
+        <view class="contentView">
+          <view class="span">奖励标准:</view>
+          <view class="classname">每人每年5000元。</view>
+        </view>
+        <view class="contentView">
+          <view class="span">申请方式:</view>
+          <view class="classname">每年9月份，学生向所在高校申请。</view>
+        </view>
+
+      </view>
+    </view>
+    <view class="school">
+      <view class="name">我校政策</view>
+      <view class="content">
+        <view>全国学生资助管理中心发布的《高等学校学生资助政策简介（本专科学生）》的相关要求；</view>
+        <view> 我校要求学生在校期间学习成绩优秀，上一学年学业成绩必须位居专业年级前30%，有特殊贡献的家庭经济困难学生优先推荐。</view>
+
+      </view>
+    </view>
+    <view class="country">
+      <view class="name">3.国家助学金</view>
+      <view class="content">
+        <view class="contentView">
+          <view class="span">奖励对象:</view>
+          <view class="classname">全日制普通高校本专科（含高职、第二学士学位）家庭经济困难的在校生。 </view>
+        </view>
+        <view class="contentView">
+          <view class="span">奖励标准:</view>
+          <view class="classname">平均每生每年3000元，各高校可参照本地规定的最低生活保障线，分为2000、3000、4000元三档。</view>
+        </view>
+        <view class="contentView">
+          <view class="span">资助面:</view>
+          <view class="classname">受助学生约占在校学生的20%。</view>
+        </view>
+        <view class="contentView">
+          <view class="span">申请方式:</view>
+          <view class="classname">每年9月份，学生向所在高校申请。</view>
+        </view>
+
+      </view>
+    </view>
+    <view class="school">
+      <view class="name">我校政策</view>
+      <view class="content">全国学生资助管理中心发布的《高等学校学生资助政策简介（本专科学生）》相关要求。
+      </view>
+    </view>
+    <view class="country">
+      <view class="name">4.国家助学贷款</view>
+      <view class="content">
+        <view class="loanName">1.校园地助学贷款（国家开发银行河北省分行承办,目前仅在省属公办28所高校开办）</view>
+        <view class="contentView">
+          <view class="loanSpan">贷款对象:</view>
+          <view class="classname">家庭经济困难的全日制普通高校本专科生（含高职、第二学士学位）和研究生。</view>
+        </view>
+        <view class="contentView">
+          <view class="loanSpan">贷款金额:</view>
+          <view class="classname">本专科生每生每学年最高申请金额不超过8000元，研究生每生每学年最高申请金额不超过12000元。</view>
+        </view>
+        <view class="contentView">
+          <view class="loanSpan">贷款利息:</view>
+          <view class="classname">贷款学生在校学习期间的国家助学贷款利息全部由财政补贴，毕业后的利息由贷款学生本人全额支付。</view>
+        </view>
+        <view class="contentView">
+          <view class="loanSpan">申请方式:</view>
+          <view class="classname">每年9月份，学生向所在高校申请。</view>
+        </view>
+        <view class="loanName">2.生源地信用助学贷款（农村信用社承办）</view>
+        <view class="contentView">
+          <view class="loanSpan">贷款对象:</view>
+          <view class="classname">参加普通高考并被录取的河北籍学生。</view>
+        </view>
+        <view class="contentView">
+          <view class="loanSpan">贷款金额:</view>
+          <view class="classname">本专科生每生每学年最高申请金额不超过8000元，研究生每生每学年最高申请金额不超过12000元。</view>
+        </view>
+        <view class="contentView">
+          <view class="loanSpan">贷款方式:</view>
+          <view class="classname">由学生户籍所在地农村信用社县（市、区）联社统一办理。</view>
+        </view>
+        <view class="contentView">
+          <view class="loanSpan">贷款利息:</view>
+          <view class="classname">贷款学生在校学习期间的助学贷款利息全部由财政补贴，毕业后的利息由贷款学生本人全额支付。</view>
+        </view>
+        <view class="contentView">
+          <view class="loanSpan">申请方式:</view>
+          <view class="classname">每年申请时间在7月15日到10月15日，学生在新学期开始前，登录河北省生源地信用助学贷款管理系统网站(网址http://syd.hee.cn/)，填写统一的贷款申请表，学生和家长向户籍所在地县级教育部门申请。</view>
+        </view>
+      </view>
+    </view>
+    <view class="school">
+      <view class="name">我校政策</view>
+      <view class="content">学校每年5月份集中办理在校学生学校国家助学贷款手续。</view>
+    </view>
+    <view class="country">
+      <view class="name">5.基层就业学费补偿贷款代偿 </view>
+      <view class="content littleContent">
+        <view>对中央部门所属全日制普通高等学校应届毕业生，自愿到中西部地区和艰苦边远地区基层单位就业、服务期达到3年以上（含3年）的，实施学费补偿或国家助学贷款代偿。</view>
+        <view>补偿代偿金额根据毕业生在校期间每年实际缴纳的学费或获得的国家助学贷款确定，每生每年不高于8000元。每年补偿或代偿总额的1/3，分3年补偿代偿完毕。</view>
+        <view>地方高校毕业生学费补偿贷款代偿由各地参照中央政策制定执行。</view>
+      </view>
+    </view>
+
+    <view class="country">
+      <view class="name">6.应征入伍服义务兵役学费 补偿贷款代偿及学费减免
+      </view>
+      <view class="content littleContent">
+        <view>对应征入伍服义务兵役的高等学校在校生及毕业生在校期间缴纳的学费或获得的国家助学贷款实施一次性补偿或代偿，对退役后复学的高校在校生（含高校新生）实行学费减免。</view>
+        <view>补偿代偿金额根据学生在校期间每年实际缴纳的学费或获得的国家助学贷款确定，退役复学学费减免金额按照实际收取学费确定，每生每年均不高于8000元。</view>
+
+      </view>
+    </view>
+
+    <view class="country">
+      <view class="name">7.直招士官学费补偿贷款代偿</view>
+      <view class="content littleContent">
+        <view>对直接招收为士官的高等学校学生，入伍时对其在校期间缴纳的学费实行一次性补偿或对其获得的国家助学贷款实行代偿，补偿代偿金额根据毕业生在校期间每年实际缴纳的学费或获得的国家助学贷款确定，每生每年不高于8000元。</view>
+      </view>
+    </view>
+
+    <view class="country">
+      <view class="name">8.退役士兵教育资助</view>
+      <view class="content littleContent">
+        <view>对退役一年以上、考入全日制普通高等学校的自主就业退役士兵，给予教育资助。</view>
+        <view>内容：</view>
+        <view>一是学费资助；</view>
+        <view>二是家庭经济困难退役士兵学生生活费资助；</view>
+        <view>三是其他奖助学金资助。学费资助标准，按省级人民政府制定的学费标准，每学年每生最高不超过8000元。</view>
+        <view>生活费及其他奖助学金资助标准，按国家现行高校学生资助政策的有关规定执行。</view>
+      </view>
+    </view>
+
+    <view class="country">
+      <view class="name">9.新生入学资助项目</view>
+      <view class="content littleContent">
+        <view>从2012年起，对中西部地区启动高校家庭经济困难新生入学资助项目，用于解决学生家庭至录取学校间的路费及入校后短期生活费，省（区、市）内院校录取的新生每人资助500元，省（区、市）外院校录取的新生每人资助1000元。</view>
+      </view>
+    </view>
+
+    <view class="country">
+      <view class="name">10.勤工助学 </view>
+      <view class="content littleContent">
+        <view>
+          学校设置校内勤工助学岗位，并为学生提供校外勤工助学机会。家庭经济困难学生优先考虑。学生参加勤工助学原则上每周不超过8小时，每月不超过40小时，劳动报酬原则上不低于当地政府或有关部门制定的最低工资标准或居民最低生活保障标准。
+        </view>
+      </view>
+    </view>
+    <view class="school">
+      <view class="name">我校政策</view>
+      <view class="content">
+        <view>我校现设有河北农业大学校勤工助学指导中心。</view>
+        <view>河北农业大学校勤工助学指导中心隶属于学生处资助管理中心，是学生处八大社团之一，秉承着“崇德、务实、求是”的校训，以“服务学子，关爱心灵，助你成长”为理念，以“服务全体在校生”为宗旨，负责校内外勤工岗位的安排，并且协助老师进行学生资助工作的开展。
+
+
+        </view>
+
+      </view>
+    </view>
+  </view>
+</view>

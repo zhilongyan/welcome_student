@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="head">
+    <text>获取您的地理位置需要允许授权，否则您的地理位置无法获取，请重新进入并允许授权 </text>
+  </view>
+  <view class="body">
+    <view class="title">
+      <text>如何允许微信授权</text>
+    </view>
+    <view class="content">
+      <text>1.退出小程序，在小程序列表中删除此小程序，重新搜索“智能迎新”进入</text>
+      <image src="/image/del.png"></image>
+      <text>2.点击进入智能迎新小程序后，将出现授权弹出框，请点击允许</text>
+      <image src="/image/sure.png"></image>
+    </view>
+  </view>
+</view>

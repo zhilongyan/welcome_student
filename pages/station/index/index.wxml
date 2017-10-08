@@ -1,0 +1,101 @@
+<!--===============说明部分=============
+  ===-->
+<view class="explainText" hidden="{{explainStatus}}">
+  <view class="explainView">
+    <view class="explainHead">
+      <text>说明</text>
+      <image class="box-close" src="/image/more/close.png" bindtap="hideHelp"></image>
+    </view>
+    <view class="explainBody">
+      <text> 1：此功能是为了方便学校统计学生需要接站人数，校方可以根据人数做出更合理的安排</text>
+      <text>2：下面有自驾和乘坐公共交通工具俩个圆形图片，选择自己实际的到校方式.(ps:选了之后可以更改)</text>
+      <text> 3：选择乘坐公共交通的同学在自己到站的时候，请进入此页面，系统会自动定位你当前位置，如果觉得定位不准，可以点击位置旁边的定位按钮，更改自己的到站位置</text>
+      <text>4：选择好到站位置后点击向管理员发送到站位置按钮，通知管理员到站信息以便学校实时得到学生到站信息并做好接站工作</text>
+    </view>
+  </view>
+</view>
+
+<view class="container">
+  <!--乘坐公共交通工具-->
+  <view class="publicTransit" hidden="{{usecar != 1}}">
+    <!--背景图-->
+    <image src="/image/station/stationBg.png" class="publicBg"></image>
+    <view class="head">
+      <image src="/image/station/stationPublicHead.png" class='headTitle'></image>
+    </view>
+    <view class="body">
+      <view class="selectPosition button">
+        <image src="/image/station/stationPosition.png" class="selectImage"></image>
+        <view class="address">
+          <picker bindchange="seePosition" value="{{positionIndex}}" range="{{position}}">
+            <view class="picker">
+              {{position[positionIndex]}}
+            </view>
+          </picker>
+        </view>
+        <!-- <text class="" bindtap="seePosition">{{address}}</text> -->
+      </view>
+      <view class="sendPosition button" bindtap="informStation">
+        <image src="/image/station/stationSend.png" class="sendImage"></image>
+        <text class="sendText">向管理员发送到站位置</text>
+      </view>
+    </view>
+    <view class="bottom">
+      <image src="/image/station/stationModify.png" bindtap="reviseTransport"></image>
+    </view>
+  </view>
+  <!--选择到站位置面-->
+  <view class="index" hidden="{{usecar != 0}}">
+    <view class="head">
+      <image src="/image/station/indexHead.png" mode="widthFix"></image>
+    </view>
+    <view class="body">
+      <view class="title">
+        <image src="/image/station/indexTitle.png" mode="widthFix"></image>
+      </view>
+      <view class="content">
+        <view class="contentTitle">
+          <image src="/image/station/indexContentTitle.png" mode="widthFix"></image>
+          <image src="/image/station/stationQuestion.png" class='headQuestion' bindtap="explain"></image>
+        </view>
+        <view class="message">
+          <view class="indexSelf" bindtap="selfDirve">
+            <image src="/image/station/indexSelf.png" mode="widthFix"></image>
+            <text>自驾</text>
+          </view>
+          <view class="indexPublic" bindtap="publicTransport">
+            <image src="/image/station/indexPublic.png" mode="widthFix"></image>
+            <text>乘坐公共交通</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--自驾面-->
+  <view class="selfTransit" hidden="{{usecar != 2}}">
+    <image src="/image/station/selfBg.png" class="selfBg"></image>
+    <view class="head">
+      <image src="/image/station/stationSelfHead.png" mode="widthFix"></image>
+    </view>
+    <view class="body">
+      <image src="/image/station/stationSelfMessage.png" mode="widthFix"></image>
+    </view>
+    <view class="bottom" bindtap="reviseTransport">
+      <image src="/image/station/stationModify.png" mode="widthFix"></image>
+
+    </view>
+  </view>
+  <!--确认接到面-->
+  <view class="finish" hidden="{{usecar != 3}}">
+    <image src="/image/station/stationBg.png" class="publicBg"></image>
+    <view class="head">
+      <image src="/image/station/finishTitle.png" mode="widthFix"></image>
+    </view>
+    <view class="body">
+      <image src="/image/station/finishText.png" mode="widthFix"></image>
+    </view>
+    <view class="bottom">
+      <image src="/image/station/cancel.png" mode="widthFix" bindtap="cancel"></image>
+    </view>
+  </view>
+</view>

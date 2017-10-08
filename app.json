@@ -1,0 +1,91 @@
+{
+  "pages": [
+    "pages/home/index/index",
+    "pages/me/sureDorm/sureDorm",
+    "pages/home/dorm/voucher",
+    "pages/me/identity/identity",
+    "pages/me/sfzsexample/sfzsexample",
+    "pages/me/about/about",
+    "pages/me/introduction/introduction",
+    "pages/home/payment/paymentQuestion",
+    "pages/home/payment/payment",
+    "pages/home/work/work",
+    "pages/home/bus/bus",
+    "pages/login/loginSms",
+    "pages/fail/fail",
+    "pages/home/hotel/hotelImg",
+    "pages/home/hotel/hotelMessage",
+    "pages/home/hotel/hotel",
+    "pages/station/index/index",
+    "pages/me/wode/wode",
+    "pages/station/confirmArrival/confirmArrival",
+    "pages/forum/addQuestion/addQuestion",
+    "pages/login/forget",
+    "pages/me/changePhone/changePhone",
+    "pages/me/fellow/fellow",
+    "pages/home/school/school",
+    "pages/home/information/information",
+    "pages/home/dorm/dorm",
+    "pages/home/dorm/seedorm",
+    "pages/me/myClass/myClass",
+    "pages/login/login_code_Info_PS",
+    "pages/me/person_Info/person_Info",
+    "pages/me/character/character",
+    "pages/me/report/report",
+    "pages/home/route/route",
+    "pages/forum/forum/forum",
+    "pages/login/login",
+    "pages/me/resetPassword/resetPassword",
+    "pages/me/question/question",
+    "pages/me/changeImg/changeImg",
+    "pages/me/reply/reply",
+    "pages/home/news/news",
+    "pages/home/bg/bg",
+    "pages/forum/forumMessage/forumMessage",
+    "pages/home/money/money",
+    "pages/me/myClass/myLeader",
+    "pages/me/my_QR_code/my_QR_code",
+    "pages/me/payment/payment",
+    "pages/home/shopping/fenlei"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#9cf",
+    "navigationBarTitleText": "智能迎新系统",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#929292",
+    "backgroundColor": "#fff",
+    "selectedColor": "#1296DB",
+    "borderStyle": "black",
+    "font-size": "32rpx",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "text": "首页",
+        "iconPath": "image/shouye1.png",
+        "selectedIconPath": "image/shouye.png"
+      },
+      {
+        "pagePath": "pages/station/index/index",
+        "text": "接站",
+        "iconPath": "image/car1.png",
+        "selectedIconPath": "image/car.png"
+      },
+      {
+        "pagePath": "pages/forum/forum/forum",
+        "text": "问答",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_focus.png"
+      },
+      {
+        "pagePath": "pages/me/wode/wode",
+        "text": "我",
+        "iconPath": "image/wode1.png",
+        "selectedIconPath": "image/wode.png"
+      }
+    ]
+  }
+}

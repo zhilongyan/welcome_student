@@ -1,0 +1,22 @@
+<view class="content">
+  <view wx:for="{{message}}" class="message">
+    <navigator url="../information/information?id={{item.id}}">
+      <view class="messageBody" bindtap="turnMessage" id="{{index}}">
+        <view class="messageTitle">
+          <text wx:if="{{item.title!=null}}">{{item.title}}</text>
+        </view>
+        <view class="messageContent">
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="downStatus">
+    <text wx:if="{{downStatus == true}}">下拉加载</text>
+    <text wx:if="{{loadStatus == true}}">正在加载...</text>
+    <text wx:if="{{loadAllStatus == true}}">已加载全部</text>
+  </view>
+    <view class="container" wx:if="{{noMessage}}">
+      <text >还没有新闻</text>
+  </view>
+</view>

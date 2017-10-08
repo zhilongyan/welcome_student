@@ -1,0 +1,94 @@
+/* pages/home/hostel/hostel.wxss */
+
+page {
+  background-color: rgb(247, 247, 247);
+}
+
+.container {
+  height: 100%;
+  padding: 0;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.body .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border-bottom: 1rpx solid #ccc*/
+}
+
+.body .title view {
+  width: 50%;
+  display: flex;
+  border-top: 20rpx solid rgba(153, 204, 255, 0.5);
+  height: 80rpx;
+  background-color: rgb(247, 247, 247);
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rpx 0;
+}
+
+.body .title .active {
+  background-color: #fff;
+  border-top: 20rpx solid rgb(153, 204, 255);
+}
+
+.body .message {
+  display: flex;
+  flex-direction: column;
+}
+
+.body .message image {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+  height: 200rpx;
+  background-color: #fff;
+}
+
+.item .picture {
+  margin: 0 20rpx;
+  height: 180rpx;
+  box-shadow: 2rpx 2rpx 2rpx 1rpx #ccc;
+}
+
+.item .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.item .content text {
+  margin: 5rpx;
+  font-size: 30rpx;
+  color: #999;
+}
+
+.item .content .name {
+  color: #000;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.address {
+  width: 530rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

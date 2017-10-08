@@ -1,0 +1,118 @@
+page {
+  background-color: #fbf9fe;
+}
+
+.content {
+  min-height: 78vh;
+}
+
+.wode_item_wrap {
+  background-color: #fff;
+  font-size: 14px;
+  margin-top: 5px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  clear: left;
+  -webkit-box-shadow: 0 0 10px rgba(0, 204, 204, 0.2);
+  -moz-box-shadow: 0 0 10px rgba(0, 204, 204, 0.2);
+  box-shadow: 0 0 10px rgba(0, 204, 204, 0.2);
+}
+
+.wode_item {
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 10px;
+  line-height: 33px;
+  color: #696969;
+  display: flex;
+}
+
+.wode_item_Info {
+  width: 70%;
+  margin-left: 30rpx;
+}
+
+.messageView {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center;*/
+  align-items: center;
+  width: 400rpx;
+}
+
+.messageViewRight {
+  display: flex;
+}
+
+.messageView view, .messageViewRight view {
+  margin-right: 20rpx;
+}
+
+.again {
+  margin: 50rpx auto;
+  background-color: #7acfa6;
+  /*width: 80%;*/
+  color: #fff;
+  /*width: 300rpx;*/
+}
+
+.tagView {
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tagView text {
+  margin: 0 25rpx;
+}
+
+.tag {
+  /*display: inline-block*/
+  display: flex;
+}
+
+/*.showView {
+  height: 60rpx;
+  overflow: hidden;
+}*/
+
+.details {
+  position: absolute;
+  right: 0rpx;
+  top: 7.5rpx;
+  border: 1rpx solid #e5e5e5;
+  width: 80rpx;
+  text-align: center;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.hideDetails {
+  display: none;
+}
+
+.tagPosition {
+  position: relative;
+}
+
+.notJf {
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.voucher{
+  font-size: 30rpx;
+  text-align: center;
+  /* margin: 10rpx 30rpx 0; */
+  background-color: rgba(245, 170, 28, 0.7);
+  color: white;
+  padding: 10rpx;
+  margin: 10rpx 0 0 0;
+  box-shadow: 5rpx 5rpx 5rpx #ccc
+}

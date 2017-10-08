@@ -1,0 +1,5 @@
+<view class="container">
+  <input placeholder="标题" name="title" class="questionTitle" bindblur="title"/>
+  <textarea placeholder="详细问题" name="question" class="questionMessage" bindblur="message"/>
+  <button bindtap="submitQuestion" class="questionButton">提交问题</button>
+</view>

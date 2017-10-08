@@ -1,0 +1,8 @@
+/* pages/me/contact/contact.wxss */
+
+page {
+  background: #fbf9fe;
+  color: #929292;
+  font-size: 30rpx;
+  padding: 10rpx 20rpx;
+}

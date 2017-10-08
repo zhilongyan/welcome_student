@@ -1,0 +1,50 @@
+/* pages/me/payment/payment.wxss */
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+  flex: 1
+}
+
+.img {
+  width: 700rpx;
+  height: 700rpx;
+  border: 1px solid #e5e5e5;
+  margin: 20rpx auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img image{
+   width: 700rpx;
+  height: 700rpx;
+}
+.payment{
+  display: flex;
+  flex-direction: column
+}
+
+.list{
+  display: flex;
+  width: 700rpx;
+  margin: 10rpx auto;
+}
+.list input{
+  border: 1px solid #e5e5e5;
+  height: 50rpx;
+  width: 500rpx;
+  padding-left: 5rpx; 
+}
+.sureButton{
+  margin: 10rpx auto;
+  width: 700rpx
+}
+
+.sureButton button{
+  width: 300rpx;
+  margin: 50rpx auto 0;
+  /*letter-spacing: 30rpx;*/
+  /*text-align: center*/
+}

@@ -1,0 +1,4 @@
+/* pages/me/resport/resport.wxss */
+.content{
+    margin: 60vh 20rpx 0 
+}

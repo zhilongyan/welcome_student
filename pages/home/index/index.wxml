@@ -1,0 +1,65 @@
+<view class="content">
+  <view>
+    <swiper indicator-dots="true" autoplay="true" class="indexSwiper" circular="true">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="100%" height="150" mode="widthFix" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="indexMiddle">
+    <view wx:for='{{symbol}}' class='symnolView' bindtap="click" data-url="{{item.url}}">
+      <image src='{{item.img}}' />
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <view class="title">
+    <view class="school {{schoolStatus ? 'active' : ''}} noticeTitle" bindtap="schoolChange">
+      <text>校园通知</text>
+    </view>
+    <view class="teacher noticeTitle  {{teacherStatus ? 'active' : ''}} " bindtap="teacherChange">
+      <text>导员通知</text>
+    </view>
+    <view class="student noticeTitle  {{studentStatus ? 'active' : ''}} " bindtap="studentChange">
+      <text>小班通知</text>
+    </view>
+  </view>
+  <scroll-view scroll-y class="scroll">
+    <view class="schoolNotice" hidden="{{!schoolStatus}}">
+      <view class="schoolpush" wx:if="{{notice.length == 0}}">校方暂未发布通知</view>
+      <block wx:for="{{notice}}">
+        <navigator url="/pages/home/news/news?id={{item.id}}">
+          <view class="bar">
+            <view class="noticeTitle">{{item.title}}</view>
+            <view class="noticeTime">{{item.time}}</view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+    <view class="teacherNotice" hidden="{{!teacherStatus}}">
+      <view class="schoolpush" wx:if="{{teacherNotice.length == 0}}">导员暂未发布通知</view>
+      <block wx:for="{{teacherNotice}}">
+        <navigator url="/pages/home/news/news?id={{item.id}}">
+          <view class="bar">
+            <view class="noticeTitle">{{item.title}}</view>
+            <view class="noticeTime">{{item.time}}</view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+    <view class="studentNotice" hidden="{{!studentStatus}}">
+      <view class="schoolpush" wx:if="{{stuNotice.length == 0}}">小班暂未发布通知</view>
+      <block wx:for="{{stuNotice}}">
+         <navigator url="/pages/home/news/news?id={{item.id}}">
+          <view class="bar">
+            <view class="noticeTitle">{{item.title}}</view>
+            <view class="noticeTime">{{item.time}}</view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+
+  </scroll-view>
+
+</view>

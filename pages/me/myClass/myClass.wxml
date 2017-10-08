@@ -1,0 +1,71 @@
+<view wx:for="{{iconArray}}" class="content">
+  <view class="wode_item_wrap">
+    <view class="wode_item">
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>姓名</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.name}}</view>
+      </view>
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>性别</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.sex}}</view>
+      </view>
+    </view>
+    <view class="wode_item">
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>电话</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.phone}}</view>
+      </view>
+      <!-- <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>宿舍</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.dormbh}}</view>
+      </view> -->
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>QQ</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.qq}}</view>
+      </view>
+    </view>
+    <view class="wode_item">
+
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>微信</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.wechat}}</view>
+      </view>
+    </view>
+    <view class="address">
+      <text>地区</text>
+      <view class="wode_item_Info">{{item.address}}</view>
+      <view class="detail" bindtap="show" wx:if="{{!item.showStatus}}" data-id="{{index}}">详情</view>
+      <view class="detail" bindtap="hide" wx:else data-id="{{index}}">隐藏</view>
+      <!--<text hidden="{{item.addStatus}}" class="addButton" bindtap="change" data-id="{{index}}">+</text>
+        <text hidden ="{{!item.addStatus}}" class="addButton" bindtap="change" data-id="{{index}}">x</text>-->
+    </view>
+    <view class="wode_item tag" hidden="{{!item.showStatus}}">
+      <text>个性标签:</text>
+      <view class="wode_item_Info tagView">
+        <block wx:for="{{item.tag}}">
+          <text>{{item.name}}</text>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="downStatus">
+  <text wx:if="{{downStatus == true}}">下拉加载</text>
+  <text wx:if="{{loadStatus == true}}">正在加载...</text>
+  <text wx:if="{{loadAllStatus == true}}">已加载全部</text>
+</view>
+<view class="noMessage">
+{{noMessage}}
+</view>

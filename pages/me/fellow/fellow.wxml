@@ -1,0 +1,64 @@
+<view wx:for="{{iconArray}}" class="content">
+  <view class="wode_item_wrap">
+    <view class="wode_item">
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>姓名</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.name}}</view>
+      </view>
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>性别</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.sex}}</view>
+      </view>
+    </view>
+    <view class="wode_item">
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>电话</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.phone}}</view>
+      </view>
+      <!-- <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>宿舍</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.dormbh}}</view>
+      </view> -->
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>QQ</text>
+        </view>
+        <view class="wode_item_left_2"> {{item.qq}}</view>
+      </view>
+    </view>
+    <view class="wode_item">
+
+      <view class="wode_item_left">
+        <view class="wode_item_left_1">
+          <text>微信</text>
+        </view>
+        <!--<view class="wode_item_left_2">yzl15531756109</view>-->
+        <view class="wode_item_left_2"> {{item.wechat}}</view>
+      </view>
+    </view>
+    <view class="wode_item fixedHeight">
+      <text>班级</text>
+      <view class="wode_item_Info">{{item.majorname+item.class}}</view>
+    </view>
+    <view class="address">
+      <text>地区</text>
+      <view class="wode_item_Info">{{item.address}}</view>
+    </view>
+  </view>
+</view>
+<view class="downStatus">
+  <text wx:if="{{downStatus == true}}">下拉加载</text>
+  <text wx:if="{{loadStatus == true}}">正在加载...</text>
+  <text wx:if="{{loadAllStatus == true}}">已加载全部</text>
+</view>
+<view class="noMessage">
+{{noMessage}}
+</view>

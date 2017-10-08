@@ -1,0 +1,143 @@
+/* pages/person_Info/person_Info.wxss */
+
+/*//个人信息*/
+.container{
+  padding: 0;
+  font-size:30rpx
+}
+.personal_info {
+  padding: 10px 0;
+  background-color: #fff;
+  /*float: left;
+  display: block;*/
+  width: 100%;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  /*justify-content: center;*/
+  align-items: center;
+  justify-content: space-between
+}
+
+.user-name {
+  padding: 10px 20px;
+  float: left;
+  /*width: 200px;*/
+  /*display: blo*/
+}
+
+.nickname {
+  /*text-align: center;*/
+  color: #696969;
+}
+
+.Student-ID {
+  /*text-align: center;  */
+  margin-top: 10px;
+  color: #696969;
+}
+
+.wode_item_wrap {
+  background-color: #fff;
+  font-size: 14px;
+  /*margin-top: 15px;*/
+  border-top: 5rpx solid #e5e5e5;
+  border-bottom: 5rpx solid #e5e5e5;
+  clear: left;
+}
+
+.wode_item {
+  margin: 0 auto;
+  width: 90%;
+  height: 45px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 10px;
+  line-height: 45px;
+  position: relative;
+  color: #696969;
+}
+
+.wode_item_Info {
+  height: 45px;
+  position: absolute;
+  left: 150rpx;
+  top: 0;
+  width: 70%;
+}
+
+.edit {
+  margin: 28rpx 20rpx;
+}
+
+.edit-1 {
+  height: 56rpx;
+  line-height: 56rpx;
+  width: 100rpx;
+  border: 1px solid #696969;
+  border-radius: 14rpx;
+  position: absolute;
+  right: 0;
+  margin: 3rpx 30rpx;
+}
+
+.modify {
+  float: right;
+  /*margin-right: 20rpx;*/
+  width: 150rpx;
+  text-align: right
+}
+
+.tag{
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap
+}
+
+.tagTitle{
+  width: 150rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  color: rgb(105, 105, 105);
+}
+
+.tagName{
+  margin: 20rpx -10rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 500rpx
+}
+
+.tagName text{
+  margin: 0 5rpx 10rpx
+}
+
+.last{
+  border-bottom: 0;
+}
+
+.editButton{
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx
+}
+
+.address {
+  margin: 0 auto;
+  width: 90%;
+  min-height: 60rpx;
+  padding-left: 10px;
+  line-height: 33px;
+  color: #696969;
+  display: flex;
+}
+
+.addressLast {
+  width: 70%;
+  margin-left: 80rpx;
+}
+
+.switch{
+  float: right;
+}

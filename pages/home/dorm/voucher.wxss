@@ -1,0 +1,23 @@
+/* pages/home/dorm/voucher.wxss */
+.container{
+  margin: 200rpx auto 0; 
+  font-size: 50rpx;
+  padding: 0;
+  flex: 0
+}
+ .content{
+  margin:10rpx 0
+}
+
+.red{
+  color: red;
+  font-size: 30rpx;
+  margin: 50rpx 50rpx
+}
+
+.big{
+  font-size: 55rpx;
+  color: blue;
+  text-align: center;
+  font-weight: bold
+}

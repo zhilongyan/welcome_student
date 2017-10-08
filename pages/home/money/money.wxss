@@ -1,0 +1,131 @@
+/* page {
+  background: #fbf9fe;
+  padding-bottom: 10rpx;
+  font-family: "微软雅黑";
+  color: gray;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30rpx auto;
+  font-size: 50rpx;
+  border-top: 1rpx solid rgb(245, 161, 0);
+  border-bottom: 1rpx solid rgb(245, 161, 0);
+  padding: 20rpx 0;
+  width: 350rpx;
+  flex: 1;
+}
+
+.headImage {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.head image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.head text {
+  white-space: nowrap;
+}
+
+.smalltitle {
+  width: 180rpx;
+  height: 50rpx;
+  text-align: left;
+  padding: 10rpx 10rpx;
+  margin: 10rpx 30rpx;
+  line-height: 50rpx;
+  border-radius: 10rpx;
+  background-color: #39f;
+  color: #fff;
+}
+
+.word {
+  margin: 10rpx 30rpx;
+  padding: 10rpx 10rpx;
+  font-size: 15px;
+  line-height: 23px;
+  border-radius: 10rpx;
+  background-color: #fff;
+} */
+
+.container {
+  padding: 0rpx;
+  font-size: 30rpx;
+}
+
+.head {
+  margin: 30rpx auto;
+  width: 720rpx;
+  text-align: center;
+}
+
+.head image {
+  width: 720rpx;
+}
+
+.country {
+  background-color: #d8f7fd;
+  width: 720rpx;
+  margin: 10rpx auto;
+  padding: 20rpx 5rpx;
+}
+
+.country .name {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #369687;
+  background-color: #fec1ae;
+  padding: 10rpx;
+}
+
+.country .content {
+  margin: 10rpx 20rpx;
+}
+
+.contentView view {
+  display: inline;
+}
+
+.span {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.school {
+  width: 720rpx;
+  margin: 20rpx auto;
+}
+
+.school .name {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin: 10rpx 0;
+}
+
+.loanName {
+  font-size: 35rpx;
+  color: red;
+  font-weight: bold;
+  margin: 15rpx 0;
+}
+
+.loanSpan {
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.school .content {
+  text-indent: 2em
+}
+.littleContent {
+  text-indent: 2em
+}

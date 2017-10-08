@@ -1,0 +1,56 @@
+<!--pages/me/payment/payment.wxml-->
+<!--<view class="content">
+  <view class="img" bindtap="changeImg">
+  <text wx:if="{{!img}}" class="titleText">此处放收费单照片，请放置清晰的照片</text>
+    <image src="{{img}}" wx:else></image>
+  </view>
+  <view class="payment">
+    <view class="list">
+      <text>单号：</text>
+        <text wx:if="{{sureStatus}}">{{list}}</text>
+      <input placeholder="单号" bindblur="list" value="{{list}}" wx:else/>
+    
+    </view>
+    <view class="sureButton">
+      <button type="primary" bindtap="sure" disabled="{{sureStatus}}">确认</button>
+    </view>
+  </view>
+</view>-->
+
+<view class="container">
+  <view class="body">
+    <block class="add">
+      <view class="addHead">
+        <view class="img demand" bindtap="changeImg" wx:if="{{sfzstatus == 0}}">
+          <image src="{{img}}" wx:if="{{img}}" class="sfzimg"></image>
+          <block wx:else>
+            <image src="/image/add.png" class="addImg"></image>
+            <view>请上传
+              <text class="red">本人半身照</text>，需
+              <text class="red">手持身份证</text>和
+              <text class="red">录取通知书内容面</text>
+            </view>
+            <text class="red">(相貌与证件必须清晰可见)</text>
+          </block>
+        </view>
+        <view class="img" wx:else>
+          <image src="{{img}}" wx:if="{{img}}" class="sfzimg"></image>
+          <text class="examine examineIng" wx:if="{{sfzstatus == 2}}">审核中</text>
+          <text class="examine examined" wx:if="{{sfzstatus == 1}}">审核通过</text>
+          <text class="examine notExamine" wx:if="{{sfzstatus == 3}}">未通过</text>
+        </view>
+        <view class="example" bindtap="example">查看示例</view>
+        <view class="notSure" wx:if="{{sfzstatus == 3}}">
+          <text>审核未通过原因：{{sfzinfo}}</text>
+        </view>
+      </view>
+      <view class="payment">
+        <view class="sureButton">
+          <button type="primary" bindtap="sure" disabled="{{sureStatus}}" wx:if="{{sfzstatus == 0}}">确认</button>
+          <button type="primary" bindtap="modify" disabled="{{sureStatus}}" wx:if="{{sfzstatus == 2 || sfzstatus == 3}}">修改</button>
+        </view>
+      </view>
+
+    </block>
+  </view>
+</view>

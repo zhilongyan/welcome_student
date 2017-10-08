@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="content">
+    <text>姓名 ：</text>
+    <text>{{name}}</text>
+  </view>
+  <view class="content">
+    <text>学号 ：</text>
+    <text>{{studentNum}}</text>
+  </view>
+  <view class="content">
+    <text>专业 ：</text>
+    <text>{{majorname}}</text>
+  </view>
+  <view class="content">
+    <text>班级 ：</text>
+    <text>{{classbh}}</text>
+  </view>
+  <view class="content">
+    <text>宿舍 ：</text>
+    <text>{{dormbh}}</text>
+  </view>
+</view>
+<view class="red">
+  <text>此页为已选宿舍凭证，在身份认证处、饭卡领取处需要出示此凭证。</text>
+</view>
+<text class="big" wx:if="{{sureDorm}}">已成功入住宿舍</text>
+<button bindtap="sure" type="primary" disabled='{{status}}' wx:else>我已入住宿舍</button>

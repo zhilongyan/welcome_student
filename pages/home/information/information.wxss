@@ -1,0 +1,27 @@
+/* pages/home/information/information.wxss */
+.title {
+  padding: 30rpx 30rpx 10rpx 30rpx;
+  font-size: 50rpx;
+  text-align: center;
+}
+.date {
+  font-size: 30rpx;
+  margin: 8rpx 0 0 40rpx;
+  color: lightgray;
+}
+
+.content {
+  padding: 6rpx 40rpx;
+  color: gray;
+  line-height: 1.5;
+  margin-bottom:30rpx 
+}
+
+view {
+  font-family: "微软雅黑";
+}
+
+image{
+ width: 670rpx;
+ height: 500rpx;
+}

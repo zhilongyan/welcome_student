@@ -1,0 +1,19 @@
+<view class="answer">
+  <block wx:for="{{message}}">
+    <view class="questionView" bindtouchstart="mytouchstart" bindtouchend="mytouchend" bindtap="handleQuestion" data-id="{{item.id}}" data-index='{{index}}'>
+      <view wx:if="{{item.title != null}}" class="questionTitle">{{item.title}}</view>
+      <view class="questionContent">{{item.content}}</view>
+      <view class="time">{{item.time}}</view>
+    </view>
+  </block>
+  <view class="downStatus">
+    <text wx:if="{{downStatus}}">下拉加载</text>
+    <text wx:if="{{loadStatus}}">正在加载...</text>
+    <text wx:if="{{loadAllStatus}}">已加载全部</text>
+  </view>
+  <view class="container" wx:if="{{noMessage}}">
+    <navigator url="../../forum/addQuestion/addQuestion">
+      <text>还没有提问，快去提问吧</text>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+
+<!--pages/me/character/character.wxml-->
+<view class="container">
+  <view class="title">
+    <text> 选择你的个性标签，变得与众不同({{characterName.length}}/7)</text>
+    <text class="keep" bindtap="keep">保存</text>
+  </view>
+  <view class="characterContent">
+    <block wx:for="{{characterName}}">
+      <view class="characterContentName" bindtap="delete" data-name="{{item.name}}" data-swiperindex="{{item.swiperIndex}}" data-characterindex="{{item.characterIndex}}">
+        <text>{{item.name}}</text>
+        <view class="group characterIcon">
+          <icon type="cancel" size="20" />
+        </view>
+      </view>
+    </block>
+  </view>
+  <swiper indicator-dots="false" class="characterSwiper">
+    <block wx:for="{{character}}">
+      <swiper-item>
+        <view class="characterNameView">
+          <text class="characterName">{{item.name}}</text>
+          <text class="characterIntroduce">{{item.introduce}}</text>
+        </view>
+        <view class="characterItem" bindtap="selectCharacter" id="{{index}}">
+          <block wx:for="{{item.detail}}">
+            <text data-name="{{item.name}}" class="{{item.color ? 'characterItemColor':''}}" id="{{index}}">{{item.name}}</text>
+          </block>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

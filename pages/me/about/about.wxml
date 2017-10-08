@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="head">
+    <image src="/image/logo.png"></image>
+    <text>智能迎新v2.1.54</text>
+  </view>
+  <view class="body">
+    <text bindtap="introduction">功能介绍</text>
+    <button open-type="contact" class="contact">联系客服</button>
+
+  </view>
+  <view class="bottom">
+    <text>沧州东易晟创网络科技有限公司版权所有</text>
+    <text>copyright © 2017-2017 dongyishengchuang.</text>
+    <text>All Rights Reserved.</text>
+  </view>
+</view>

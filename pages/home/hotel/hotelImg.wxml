@@ -1,0 +1,10 @@
+<view class="container">
+  <swiper circular="true">
+    <block wx:for="{{img}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="aspectFill"/>
+        <text>{{index+1}}/{{img.length}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

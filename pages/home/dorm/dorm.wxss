@@ -1,0 +1,77 @@
+@import "../../common/weui.wxss";
+
+page {
+  background-color: #f8f8f8;
+  letter-spacing: 0rpx
+}
+
+.picker {
+  padding: 19rpx 26rpx;
+  background-color: #fff;
+}
+
+.sureButton {
+  /*position: absolute;*/
+  top: 100rpx;
+  margin-bottom: 30rpx;
+  background-color: #7acfa6;
+  width: 100%;
+  color: #fff
+   
+}
+ 
+.alreadyLive {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.alreadyLiveStudent {
+  display: flex;
+  flex-direction: column;
+  margin:5rpx 15rpx;
+  background: rgb(255, 255, 255);
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx 0;
+}
+
+.alreadyLiveStudent:last-child{
+  border: 0;
+}
+.alreadyLiveStudent .name{
+  color: #999;
+}
+.headImg {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+  align-items: center;
+}
+
+.liveStudent {
+  width: 450rpx;
+  margin-left: 10rpx;
+}
+
+.mesImg {
+  width: 70rpx;
+  height: 40rpx;
+}
+
+.bed {
+  width: 200rpx;
+}
+
+.tag {
+  margin: 0 5rpx;
+}
+
+.notJf {
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5%;
+}

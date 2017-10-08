@@ -1,0 +1,29 @@
+.expressHeader{
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 30rpx
+}
+.messageName{
+    text-align: left;
+    font-size: x-large;
+    margin:30rpx
+}
+.messageImg{
+    text-align: center;
+    margin-bottom: 30rpx
+}
+.message{
+    border: 2rpx #39f solid;
+    padding-left: 30rpx;
+    margin: 0 30rpx
+}
+.message view{
+    margin: 10rpx 0;
+}
+view{
+    font-family: "微软雅黑";
+    color: gray;
+}
+.content{
+    margin-bottom: 30rpx
+}

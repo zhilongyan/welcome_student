@@ -1,0 +1,76 @@
+.container {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #eee;
+}
+
+.head {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.head .picture image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin: 0 30rpx;
+}
+
+.head .message .name {
+  margin-bottom: 10rpx;
+}
+
+.head .message .num {
+  margin-top: 10rpx;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 0;
+}
+
+.body .message {
+  margin-bottom: 20rpx;
+}
+
+.body .content {
+  display: flex;
+  flex-direction: row;
+  height: 90rpx;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 30rpx;
+  background-color: #fff;
+}
+
+.body .content .name {
+  flex-grow: 1;
+}
+
+.body .content image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 30rpx;
+}
+
+.bottom{
+  height: 90rpx;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  letter-spacing:50rpx
+}
+.bottom text{
+  margin-left: 50rpx;
+  color: #000
+}

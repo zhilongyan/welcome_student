@@ -1,0 +1,39 @@
+<view class="bd">
+  <form bindsubmit="formSubmit" class="login-form">
+
+    <!--聚焦功能-->
+    <view class="input-group ">
+      <text class="input-label">QQ</text>
+      <input type="number" cursor-spacing="50" id="userid" maxlength="14" bindblur="qq" name="qqNum" value="{{qq}}" />
+    </view>
+    <view class="input-group ">
+      <text class="input-label">微信</text>
+      <input type="text" cursor-spacing="50" id="userid" name="wechat" value="{{wechat}}" bindblur="wechatBlur" />
+    </view>
+
+    <!--<view class="input-group ">
+      <text class="input-label">手机号</text>
+      <input type="number" cursor-spacing="50" id="userid" maxlength="13" bindinput="phone_Input" name="phoneNum" value="{{phone}}"/>
+    </view>-->
+    <view class="input-group">
+      <text class="input-label">邮箱</text>
+      <input cursor-spacing="30"  bindblur="emailBlur" name="email" value="{{email}}" />
+      <view class="weui-cell__ft" wx:if="{{!emailStatus}}">
+        <icon class="weui-icon-radio" type="warn" size="20"></icon>
+      </view>
+    </view>
+    <view class="characterBox">
+      <view class="characterText">性格</view>
+      <view class="characterName" hidden="{{tag.length==0}}">
+        <block wx:for="{{tag}}">
+          <text>{{item.name}}</text>
+        </block>
+      </view>
+      <text class="characterContent" bindtap="character" hidden="{{tag.length>0}}">点击这里添加属于你的个性标签</text>
+      <text class="characterContentAdd" bindtap="character" hidden="{{tag.length==0}}">点击这里增加属于你的个性标签</text>
+    </view>
+    <view class="btn-area">
+      <button formType="submit" class="confirm-btn">确认完善</button>
+    </view>
+  </form>
+</view>

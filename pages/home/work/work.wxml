@@ -1,0 +1,321 @@
+<view class="title">
+  <view class="head" bindtap="allChange">
+    <text> 农大总览</text>
+    <image src="/image/rightSJ.png" wx:if="{{!allStatus}}"></image>
+    <image src="/image/rightBottom.png" wx:else></image>
+  </view>
+
+  <view class="contentBox" wx:if="{{allStatus}}">
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+      <block wx:for="{{allImage}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="content">
+      <view class="contentText">河北农业大学是河北省人民政府与国家教育部、农业部、国家林业局分别共建的河北省重点骨干大学。是教育部“卓越工程师教育培养计划”实施高校，教育部、农业部、国家林业局首批“卓越农林人才教育培养计划”实施高校。是首批入选“中西部高校基础能力建设工程”的高校。</view>
+      <view class="contentText">河北农业大学创建于1902年（清光绪28年），是我国最早实施高等农业教育的院校，河北省建立最早的高等院校。</view>
+      <view class="contentText">学校先后经历了直隶农务学堂、直隶高等农业学堂、直隶公立农业专门学校、河北大学农科、河北省立农学院、河北农学院、河北农业大学等历史时期。</view>
+      <view class="contentText">1952年，森林系整建制调整到北京，参与组建了北京林学院（现北京林业大学）；畜牧兽医系整建制调整到内蒙古，参与组建了内蒙古畜牧兽医学院（现内蒙古农业大学）；1955年农田水利系整建制调整到武汉，参与组建了武汉水利学院（武汉水利电力大学的前身，现已并入武汉大学）。</view>
+      <view class="contentText">1995年，与原河北林学院合并组建了新的河北农业大学；2000年，原河北水产学校（位于秦皇岛市）和原河北畜牧科技学校（位于定州市）两所中专先后并入学校。</view>
+    </view>
+  </view>
+</view>
+
+<view class="title">
+  <view class="head" bindtap="campusChange">
+    渤海校区
+    <image src="/image/rightSJ.png" wx:if="{{!campusStatus}}"></image>
+    <image src="/image/rightBottom.png" wx:else></image>
+  </view>
+  <view class="contentBox" wx:if="{{campusStatus}}">
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+      <block wx:for="{{campusImage}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="content">
+      <view class="contentText">河北农业大学渤海校区，位于河北省沧州市渤海新区。新区东临渤海，南接山东，北依京津，面积2400平方公里，海岸线130公里，总人口60万。2011年以来，河北沿海地区发展上升为国家战略，省委、省政府把渤海新区列为举全省之力打造的河北省及“两环（环渤海、环京津）”地区新的经济增长极和隆起带。新区全力实施“以港促产、以产兴城、港产城一体化”的发展战略，积极推进综合性大港建设，全力打造亚欧大陆新通道桥头堡；加大构建以石油化工、冶金装备、商贸物流等主导产业为支撑，以新材料、海洋生物、海洋工程装备等战略性新兴产业为重点的现代临港产业体系，积极打造“一港、一城、三组团、九园区”产业聚集新格局，努力建设具有国际竞争优势的临港产业聚集区；着力构建一座宜居宜业、和谐魅力的滨海新城，为大港口建设、大产业发展及创建“人才特区”提供强大的后方延伸和服务保证。</view>
+      <view class="contentText">渤海校区坐落在渤海新区黄骅新城中心地带的科教园区，紧邻博海公园风景区和CBD企业总部，校区占地面积1900亩，规划建筑面积53.89万平方米，项目一期已投资6亿元，建筑面积近28万平方米，预计总投资超过15亿元。校区建设规划以“生态、人文、创新”为指导思想，紧紧围绕打造“水城中的绿洲，绿洲中的校园”这一主题，校园南区集中展现了“一轴八景十二园”的园林式景观特色，绿化率达到了56.9%。</view>
+      <view class="contentText">渤海校区于2011年实现首次招生。2013年8月，被河北省教育厅列为高校综合改革试点学院，目前在校生7100余人。经过办学过程中的不断探索，2014年校区增设“两院一部”（即文管学院、理工学院、基础课部），在完善学校管理体系的同时，逐步形成了文理并重、基础宽厚、突出应用与创新的办学特色</view>
+      <view class="contentText">2015年，校区招生共涉及23个专业，包括：海洋科学、海洋技术、水产养殖学、海洋渔业科学与技术、化学工程与工艺、食品质量与安全、食品科学与工程、制药工程、水利水电工程、计算机科学与技术、软件工程、网络工程、物流管理、工程管理、工商管理、市场营销、会计学、公共事业管理共18个本科专业，水环境监测与保护、建筑工程技术、会计电算化、人力资源管理、商务英语，5个专科专业。学校本科教育实施按类培养，注重“厚基础、宽口径、广交叉、精专业”，培养具有较强专业素养、实践能力、创新精神的高素质人才。专科教育在保证专业培养的同时，增设部分素质教育课程，提高学生的综合素质、适应能力。</view>
+      <view class="contentText">1995年，与原河北林学院合并组建了新的河北农业大学；2000年，原河北水产学校（位于秦皇岛市）和原河北畜牧科技学校（位于定州市）两所中专先后并入学校。</view>
+    </view>
+  </view>
+</view>
+
+<view class="title">
+  <view class="head" bindtap="comprehensiveChange">
+    综合楼
+    <image src="/image/rightSJ.png" wx:if="{{!comprehensiveStatus}}"></image>
+    <image src="/image/rightBottom.png" wx:else></image>
+  </view>
+  <view class="contentBox" wx:if="{{comprehensiveStatus}}">
+    <swiper autoplay="true" circular="true">
+      <block wx:for="{{comprehensiveImage}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="content">
+      <view class="contentTitle">
+        <span>五楼:</span> 功能报告厅
+      </view>
+      <view class="contentList"> * 0502 综合办公室</view>
+      <view class="contentList"> * 0518 管理员活动室</view>
+      <view class="contentList"> * 0522 会议Ⅰ室</view>
+      <view class="contentList"> * 0519 会议Ⅱ室</view>
+
+      <view class="contentTitle">
+        <span>六楼:</span>理工学院
+      </view>
+      <view class="contentList"> * 0607学院办公室</view>
+      <view class="contentList"> * 0614档案室</view>
+      <view class="contentList"> * 0623会议室</view>
+      <view class="contentList"> * 0606理工学院教师办公室Ⅰ</view>
+      <view class="contentList"> * 0603理工学院教师办公室Ⅱ</view>
+      <view style="text-indent: 75rpx; padding:10rpx 0">财务部</view>
+      <view class="contentList"> * 0619财务办公室</view>
+      <view style="text-indent: 75rpx; padding:10rpx 0">基础部</view>
+      <view class="contentList"> * 0609基础课部办公室</view>
+
+      <view class="contentTitle">
+        <span>七楼:</span>文管学院
+      </view>
+      <view class="contentList"> * 0709学院办公室</view>
+      <view class="contentList"> * 0708会议室</view>
+      <view class="contentList"> * 0704档案室</view>
+      <view class="contentList"> * 0703文管学院教师办公室</view>
+      <view style="text-indent: 75rpx; padding:10rpx 0">海洋学院</view>
+      <view class="contentList"> * 0723学院办公室</view>
+      <view class="contentList"> * 0719档案室</view>
+      <view class="contentList"> * 0729海洋学院教师办公室Ⅰ</view>
+      <view class="contentList"> * 0734海洋学院教师办公室Ⅱ</view>
+
+      <view class="contentTitle">
+        <span>八楼:</span>教务办
+      </view>
+      <view class="contentList"> * 0809教务办</view>
+      <view class="contentList"> * 0807会议室</view>
+      <view class="contentList"> * 0803信息站</view>
+      <view style="text-indent: 75rpx; padding:10rpx 0">基础课办</view>
+      <view class="contentList"> * 0827基础课部教师办公室Ⅰ</view>
+      <view class="contentList"> * 0823基础课部教师办公室Ⅱ</view>
+      <view style="text-indent: 75rpx; padding:10rpx 0">财务办</view>
+      <view class="contentList"> * 0813财务办会议室</view>
+
+      <view class="contentTitle">
+        <span>九楼:</span>综合办
+      </view>
+      <view class="contentList"> * 0911行政科</view>
+      <view class="contentList"> * 0913保卫科、国资料</view>
+      <view class="contentList"> * 0905接待室</view>
+      <view class="contentList"> * 0916会议室Ⅰ</view>
+      <view class="contentList"> * 0924会议室Ⅱ</view>
+
+      <view class="contentTitle">
+        <span>十楼:</span>后勤办
+      </view>
+      <view class="contentList"> * 1011综合科</view>
+      <view class="contentList"> * 1005物业管理科</view>
+      <view class="contentList"> * 1013会议室</view>
+
+      <view class="contentTitle">
+        <span>十二楼:</span>教职工活动室
+      </view>
+      <view class="contentList"> * 练歌房</view>
+      <view class="contentList"> * 乒乓球室</view>
+      <view class="contentList"> * 台球室</view>
+      <view class="contentList"> * 健身房</view>
+      <view class="contentList"> * 棋牌室</view>
+      <view class="contentList"> * 值班室</view>
+    </view>
+  </view>
+</view>
+
+<view class="title">
+  <view class="head" bindtap="libraryChange">
+    图书馆
+    <image src="/image/rightSJ.png" wx:if="{{!libraryStatus}}"></image>
+    <image src="/image/rightBottom.png" wx:else></image>
+  </view>
+  <view class="contentBox" wx:if="{{libraryStatus}}">
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+      <block wx:for="{{libraryImage}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="content">
+      <view class="contentTitle">
+        <span>各层介绍</span>
+      </view>
+      <view>
+        <view class="contentList"><span>一层：</span>东：历史地理类、文学类，西：文教体育类、语言艺术类、马列社科类</view>
+        <view class="contentList"><span>二层：</span>东：科技期刊、科技类专业图书、数理科学与化学，西：社科期刊、计算机类、经济类</view>
+        <view class="contentList"><span>三层：</span>期刊合订本</view>
+        <view class="contentList"><span>四层：</span>电子阅览室</view>
+      </view>
+      <view class="contentTitle">
+        <span>开放时间</span>
+      </view>
+      <view style="text-indent: 15rpx;">
+        <span>一层至三层：</span>周日~周五
+      </view>
+      <view class="contentList">上午：8:00—11:50 </view>
+      <view class="contentList">下午：14:30—21:30</view>
+      <view style="text-indent: 15rpx;">
+        <span>四层：</span>周日~周五
+      </view>
+      <view class="contentList">上午：8:00—11:50 </view>
+      <view class="contentList">下午：14:30—17:30 </view>
+      <view class="contentList">晚上：18:30—21:30</view>
+    </view>
+  </view>
+</view>
+<view class="title">
+  <view class="head" bindtap="restaurantChange">
+    餐厅
+    <image src="/image/rightSJ.png" wx:if="{{!restaurantStatus}}"></image>
+    <image src="/image/rightBottom.png" wx:else></image>
+  </view>
+  <view class="contentBox" wx:if="{{restaurantStatus}}">
+    <swiper  indicator-dots="true" autoplay="true" circular="true">
+      <block wx:for="{{restaurantImage}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="content">
+      <view class="contentTitle">
+        <span>营业时间</span>
+      </view>
+      <view class="contentList">
+        食堂一层：06:00—20:00
+      </view>
+      <view class="contentList">
+        食堂二层：06:00—21:00
+      </view>
+      <view class="contentList">
+        食堂三层：10:00—22:00 <span style="color:#f4a000;font-weight:200;font-size:25rpx;">（注：大学生创业中心）</span>
+      </view>
+      <view class="contentList">
+        回民餐厅：06:00—22:30
+      </view>
+    </view>
+  </view>
+</view>
+<view class="title">
+  <view class="head" bindtap="bathChange">
+    浴室
+    <image src="/image/rightSJ.png" wx:if="{{!bathStatus}}"></image>
+    <image src="/image/rightBottom.png" wx:else></image>
+  </view>
+  <view class="contentBox" wx:if="{{bathStatus}}">
+    <!--<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{bathImage}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>-->
+    <view class="content">
+      <view class="contentTitle">
+        <span>位置</span>
+      </view>
+      <view class="contentList">
+        <span>男生：</span>超市二楼
+      </view>
+      <view class="contentList">
+        <span>女生：</span>超市东侧
+      </view>
+      <view class="contentTitle">
+        <span>营业时间</span>
+      </view>
+      <view>
+        <text style=" width: 120rpx;">周一至周五：</text><text>13：00—18：00</text> 
+      </view>
+      <view>
+        <text style=" width: 120rpx;">周六至周日：</text><text>上午：9:00—11:30</text> 
+      </view>
+      <view style=" margin-left: 120rpx;">
+        <text>下午：13：00—18:00</text> 
+      </view>
+    </view>
+  </view>
+</view>
+<view class="title">
+  <view class="head" bindtap="waterChange">
+    饮水处
+    <image src="/image/rightSJ.png" wx:if="{{!waterStatus}}"></image>
+    <image src="/image/rightBottom.png" wx:else></image>
+  </view>
+  <view class="contentBox" wx:if="{{waterStatus}}">
+    <!--<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{waterImage}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>-->
+    <view class="content">
+      <view class="contentList">
+        1、 在男生宿舍二号楼宿管室办理水卡，用水卡可以在每栋宿舍楼一层的饮水机打热水或纯净水，每壶0.5元左右，24小时开放。
+      </view>
+      <view class="contentList">
+        2、二号教学楼一楼三区备用净化直饮水机，可免费接水引用。
+      </view>
+      <view class="contentList">
+        3、 热水房位于餐厅东侧，打水时需拿装有校园卡的手机或饭卡。
+        <span style="color:#f4a000; font-size:25rpx;font-weight:200;">（开放时间：早晨：06:00—08:00 中午：11:30—13:00 晚上：17:30—19:00）</span>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="title">
+  <view class="head" bindtap="expressChange">
+    快递信息
+    <image src="/image/rightSJ.png" wx:if="{{!expressStatus}}"></image>
+    <image src="/image/rightBottom.png" wx:else></image>
+  </view>
+  <view class="contentBox" wx:if="{{expressStatus}}">
+    <view class="content">
+      <view class="express">
+        <text>名称：申通快递 </text>
+        <text>地点：食堂三楼</text>
+        <text>时间：10:00—18:00</text>
+        <text>手机：15028609222</text>
+      </view>
+      <view class="express">
+        <text>名称：中通 圆通 </text>
+        <text>地点：食堂三楼菜鸟驿站</text>
+        <text>时间：9:30—18:30</text>
+        <text>手机：15383773201</text>
+      </view>
+      <view class="express">
+        <text>名称：韵达快递 </text>
+        <text>地点：食堂一楼南门东侧</text>
+        <text>时间：10:00—18:00</text>
+        <text>手机：0317-8816822</text>
+      </view>
+      <view class="express">
+        <text>名称：顺丰速运 </text>
+        <text>地点：桃李园超市后面</text>
+        <text>时间：11:00—17:00</text>
+        <text>手机：13103199123</text>
+      </view>
+      <view class="express">
+        <text>地址：桃李园超市驾校报名处 </text>
+        <text>营业范围：天天快递  百世快递  优速快递  万象物流  唯品会  天猫超市  聚美优品  亚马逊</text>
+        <text>时间：10:00—19:00</text>
+        <text>手机：183328/26327</text>
+      </view>
+    </view>
+  </view>
+</view>

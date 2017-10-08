@@ -1,0 +1,352 @@
+.container {
+  height: 100%;
+  padding: 0;
+}
+
+.publicTransit {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.publicBg, .selfBg {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  z-index: -99;
+}
+
+.publicTransit .headTitle {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.publicTransit .head {
+  width: 100%;
+  height: 48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 100rpx;
+}
+
+.publicTransit .body {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.publicTransit .body .button {
+  width: 80%;
+  height: 80rpx;
+  border-radius: 15rpx;
+  border: 1rpx solid #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.publicTransit .body .selectPosition {
+  margin-bottom: 70rpx;
+  background-color: #fff;
+}
+
+.publicTransit .body .selectImage {
+  width: 40rpx;
+  height: 53rpx;
+  margin: 0 0 0 30rpx;
+}
+
+.publicTransit .body  .address {
+  margin: 0 20rpx 0 0;
+  white-space: nowrap;
+  overflow: auto;
+  width: 80%;
+  font-size: 30rpx;
+  color: rgb(245, 161, 0);
+  text-align: center
+}
+
+.publicTransit .body .sendPosition {
+  background-color: rgb(245, 161, 0);
+  display: flex;
+}
+
+.publicTransit .body .sendImage {
+  width: 50rpx;
+  height: 38rpx;
+  margin-left: 30rpx;
+}
+
+.publicTransit .body .sendText {
+  width: 500rpx;
+  font-size: 35rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.publicTransit .bottom {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.publicTransit .bottom image {
+  width: 200rpx;
+  height: 30rpx;
+  float: right;
+  margin-right: 10%;
+}
+
+.explain {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+  width: 100%;
+  margin: -50rpx 0 0 0;
+}
+
+.explain image {
+  z-index: 999;
+}
+
+.helpImage {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 30rpx 0 0;
+}
+
+.explainText {
+  position: absolute;
+  z-index: 999;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.explainView {
+  width: 80%;
+  margin: 0 10%;
+  background: #fff;
+  border: 1rpx solid #eee;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(22, 22, 22, 0.35);
+}
+
+.explainHead {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.explainHead text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.explainBody {
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx 20rpx;
+}
+
+.explainBody text {
+  margin: 10rpx 0;
+}
+
+.box-close {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 20rpx;
+}
+
+.index {
+  background-color: #f8fcfe;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.index .head {
+  width: 100%;
+}
+
+.index .head image {
+  width: 100%;
+}
+
+.index .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.index .body .title {
+  margin: 10rpx 0 50rpx;
+  width: 100%;
+}
+
+.index .title image {
+  width: 100%;
+}
+
+.index .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 94%;
+  margin: 0 3%;
+  border-radius: 20rpx;
+  position: relative;
+}
+
+.index .content .contentTitle {
+  margin: 30rpx 0 50rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.index .content .contentTitle  image:first-child {
+  width: 446rpx;
+  margin: 0 auto;
+}
+
+.headQuestion {
+  width: 50rpx;
+  height: 50rpx;
+  align-self: flex-end;
+  position: absolute;
+  align-items: flex-end;
+  right: 20rpx;
+  top: 30rpx;
+}
+
+.index .message {
+  display: flex;
+  justify-content: space-between;
+  width: 446rpx;
+}
+
+.index .message view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index .message image {
+  width: 107rpx;
+}
+
+.index .message text {
+  color: rgb(163, 163, 163);
+  font-size: 20rpx;
+  margin: 20rpx 0;
+}
+
+.selfTransit {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.selfTransit .head {
+  width: 100%;
+  height: 48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 100rpx;
+}
+
+.selfTransit .head image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.selfTransit .body {
+  height: 150rpx;
+  display: flex;
+  align-items: flex-end;
+}
+
+.selfTransit .body image {
+  width: 100%;
+}
+
+.selfTransit .bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.selfTransit .bottom image {
+  width: 200rpx;
+  height: 30rpx;
+  margin: 0 50rpx 70rpx 0;
+}
+
+.finish {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.finish .head {
+  width: 100%;
+  height: 48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 100rpx;
+}
+
+.finish .head image {
+  width: 300rpx;
+  height: 300rpx;
+}
+.finish .body {
+  height: 150rpx;
+  display: flex;
+  align-items: flex-end;
+}
+
+.finish .body image {
+  width: 100%;
+}
+
+.finish .bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.finish .bottom image {
+  width: 200rpx;
+  height: 30rpx;
+  margin: 0 50rpx 70rpx 0;
+}

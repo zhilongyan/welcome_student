@@ -1,0 +1,75 @@
+<!--pages/me/payment/payment.wxml-->
+<!--<view class="content">
+  <view class="img" bindtap="changeImg">
+  <text wx:if="{{!img}}" class="titleText">此处放收费单照片，请放置清晰的照片</text>
+    <image src="{{img}}" wx:else></image>
+  </view>
+  <view class="payment">
+    <view class="list">
+      <text>单号：</text>
+        <text wx:if="{{sureStatus}}">{{list}}</text>
+      <input placeholder="单号" bindblur="list" value="{{list}}" wx:else/>
+    
+    </view>
+    <view class="sureButton">
+      <button type="primary" bindtap="sure" disabled="{{sureStatus}}">确认</button>
+    </view>
+  </view>
+</view>-->
+
+<view class="container">
+  <view class="head">
+    <view class="major">
+      您所在专业:
+      <text class="money">{{majorname}}</text>,共需缴费
+      <text class="money">{{jfxuefei + jfzafei + jfjiaocaifei + jfzhusufei}}</text>元。
+    </view>
+    <view class="message">
+      其中学费:
+      <text class="money">{{jfxuefei}}</text>元, 杂费:
+      <text class="money">{{jfzafei}}</text>元, 教材费:
+      <text class="money">{{jfjiaocaifei}}</text>元, 住宿费:
+      <text class="money">{{jfzhusufei}}</text>元。
+    </view>
+    <view class="care">
+      <text class="red">(注：以上缴费数据仅供参考 实际费用以‘入学通知’上为准。)</text>
+    </view>
+  </view>
+  <view class="body">
+    <!--<view class="add" wx:if="{{jstatus == 0}}">-->
+    <block class="add">
+      <view class="addHead">
+        <view class="img" bindtap="changeImg" wx:if="{{jstatus == 0}}">
+          <image src="{{img}}"></image>
+          <text class="examine examineIng" wx:if="{{jstatus == 2}}">审核中</text>
+          <text class="examine examined" wx:if="{{jstatus == 1}}">审核通过</text>
+          <text class="examine notExamine" wx:if="{{jstatus == 3}}">未通过</text>
+        </view>
+        <view class="img" wx:else>
+          <image src="{{img}}"></image>
+          <text class="examine examineIng" wx:if="{{jstatus == 2}}">审核中</text>
+          <text class="examine examined" wx:if="{{jstatus == 1}}">审核通过</text>
+          <text class="examine notExamine" wx:if="{{jstatus == 3}}">未通过</text>
+        </view>
+        <view class="addMessage">
+          <text>点击上方拍摄照片。请拍摄清晰可见的照片，易于工作人员审核，如有多张照片，需要将他们放在一块，拍成一张照片，保证每张单子的重要信息都能显示出来。输入单号时用逗号隔开每张单子的单号。第一次提交之后工作人员会进行审核，审核过程中可以更换更清晰的照片，审核通过后照片单号等都不可以更改，此时才能查看自己所在宿舍具体情况。</text>
+        </view>
+        <view class="notSure" wx:if="{{jstatus == 3}}">
+          <text>审核未通过原因：{{jfInfo}}</text>
+        </view>
+      </view>
+      <view class="payment">
+        <view class="list">
+          <text>单号：</text>
+          <input placeholder="单号" bindblur="list" value="{{list}}" wx:if="{{jstatus ==0}}" />
+          <text wx:else>{{list}}</text>
+        </view>
+        <view class="sureButton">
+          <button type="primary" bindtap="sure" disabled="{{sureStatus}}" wx:if="{{jstatus == 0}}">确认</button>
+          <button type="primary" bindtap="modify" disabled="{{sureStatus}}" wx:if="{{jstatus == 2 || jstatus == 3}}">修改</button>
+        </view>
+      </view>
+
+    </block>
+  </view>
+</view>

@@ -1,0 +1,107 @@
+/*标题*/
+
+page {
+  background: #fbf9fe;
+  letter-spacing: 0rpx;
+  font-family: 微软雅黑；
+}
+
+.title {
+  font-size: 35rpx;
+  /*font-weight: bold;*/
+  color: #929292;
+  border-bottom: 3rpx solid rgb(239, 239, 239);
+  padding-bottom: 10rpx;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  align-items: flex-end
+}
+
+.head image {
+  width: 30rpx;
+  height: 30rpx;
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 5rpx;
+}
+
+/*轮播*/
+
+swiper {
+  width: 100%;
+  margin: 40rpx auto 20rpx;
+  background: white;
+}
+
+swiper image{
+  width: 100%;
+  height: 100%
+}
+.openView {
+  color: rgb(56, 121, 217);
+  font-size: 28rpx;
+  width: 90%;
+  margin: 0 auto;
+  text-align: right;
+  text-decoration: underline;
+}
+
+/*内容*/
+
+.content {
+  width: 92%;
+  margin: 0 auto;
+  font-size: 30rpx;
+  line-height: 40rpx;
+  background: white;
+  color: black;
+  font-weight: 200;
+  padding: 20rpx 4%;
+  border-radius: 10rpx;
+}
+
+/*首行缩进*/
+
+.content .contentText {
+  text-indent: 60rpx;
+}
+
+/*内容区小标题*/
+
+.content .contentTitle {
+  line-height: 60rpx;
+  text-indent: 0;
+}
+
+.content .contentTitle span {
+  font-weight: bold;
+}
+
+/*内容区的列表*/
+
+.content .contentList {
+  text-indent: 60rpx;
+}
+
+.content .contentList span {
+  font-weight: bold;
+}
+
+.express{
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  margin: 10rpx 0;
+  border: 1rpx solid #eee;
+  padding: 10rpx;
+  border-radius: 5rpx
+}
+.express text{
+  margin: 5rpx 0;
+}

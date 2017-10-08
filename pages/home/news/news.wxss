@@ -1,0 +1,20 @@
+.title {
+  padding: 30rpx 30rpx 10rpx 30rpx;
+  font-size: 50rpx;
+  text-align: center;
+}
+.date {
+  font-size: 30rpx;
+  margin: 8rpx 0 0 40rpx;
+  color: lightgray;
+}
+
+.content {
+  padding: 6rpx 40rpx;
+  color: gray;
+  line-height: 1.5;
+}
+
+view {
+  font-family: "微软雅黑";
+}

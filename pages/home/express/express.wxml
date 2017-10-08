@@ -1,0 +1,20 @@
+<view class="content">
+  <view class="expressHeader">快递地点及时间</view>
+  <view wx:for="{{message}}">
+    <view class="messageName"><text>{{item.name}}</text></view>
+    <view class="messageImg">
+      <image src="{{item.imgUrl}}"></image>
+    </view>
+    <view class="message">
+      <view>地址：
+        <text>{{item.address}}</text>
+      </view>
+      <view> 时间：
+        <text>{{item.time}}</text>
+      </view>
+      <view> 电话：
+        <text>{{item.phone}}</text>
+      </view>
+    </view>
+  </view>
+</view>

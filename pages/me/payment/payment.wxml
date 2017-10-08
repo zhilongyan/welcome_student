@@ -1,0 +1,18 @@
+<!--pages/me/payment/payment.wxml-->
+<view class="content">
+  <view class="img" bindtap="changeImg">
+  <text wx:if="{{!img}}" class="titleText">此处放收费单照片，请放置清晰的照片</text>
+    <image src="{{img}}" wx:else></image>
+  </view>
+  <view class="payment">
+    <view class="list">
+      <text>单号：</text>
+        <text wx:if="{{sureStatus}}">{{list}}</text>
+      <input placeholder="单号" bindblur="list" value="{{list}}" wx:else/>
+    
+    </view>
+    <view class="sureButton">
+      <button type="primary" bindtap="sure" disabled="{{sureStatus}}">确认</button>
+    </view>
+  </view>
+</view>

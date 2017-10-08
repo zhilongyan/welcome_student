@@ -1,0 +1,49 @@
+<view class="container">
+  <!--<view class="contentHead">-->
+  <view class="head">
+    <view class="headImage">
+      <image src="/image/busTitle.png"></image>
+    </view>
+    <text>学校公交路线</text>
+  </view>
+  <!--</view>-->
+  <view class="body">
+    <view class="content">
+      <view class="title">901路</view>
+      <view class="message">
+        <view><span>行车时：</span>7:00-17:50约每隔20分钟一辆</view>
+        <view><span>行车路线：</span>原汽车站-民生银行-西域宾馆-交通局局-公园-黄骅宾馆-耀华商厦-药材公司-供销大厦-方庄子-民生局</view>
+      </view>
+    </view>
+    <view class="content">
+      <view class="title">6路</view>
+      <view class="message">
+        <view><span>行车时间：</span>7:00-18:00约每隔10分一辆</view>
+        <view><span>行车路线：</span>农业大学--御景豪庭--朱胡庄路口--民政局--方马庄路口--方庄村--万庄西路口（6、8）--黄骅中学（6、8）--市供销社（3、6、8）--药材公司（3、6、8）--海园市场北门（3、6 、10）--耀华商厦（3 、6 、10）--交警大队（2、3、6）--人民公园（2、3、6）--公路管理站（2、3、6）--交通局--西域宾馆--神农居药店--广电局--春蕾幼儿园--劳动大厦--海景花园--市政府（2、6）--武装部（2、6）--地税局（2、3、6）--中国移动（3、6）--监察局（3、6）--文体中心（2、6、10）--新客运站（2、6、10）</view>
+      </view>
+    </view>
+    <view class="content">
+      <view class="title ">常用地点乘车方式</view>
+      <view class="message">
+        <view>
+          <span>黄骅：</span> 学校北门口乘坐6路公交车，到信誉楼下车，票价一元，用时约25分钟；学校北门马路对面乘坐901公交车，票价一元，用时约25分钟。
+        </view>
+        <view>
+          <span>中捷：</span> 在学校北门口乘坐901，用时10分钟左右。
+        </view>
+        <view>
+          <span>沧州汽车站：</span>可在学校门口乘坐6路到黄骅汽车站，然后乘坐黄骅到沧州的汽车到沧州汽车站，随时有车，票价14元，用时1小时左右。
+        </view>
+        <view>
+          <span>沧州火车站：</span>按以上方式乘车到沧州汽车站后，出客运站东行300米即达（黄骅市无火车站）
+        </view>
+        <view>
+          <span>沧州高铁站：</span>按以上方式乘车到沧州火车站后，在沧州火车站广场乘坐430路公交车，用时40分钟左右。
+        </view>
+        <view>
+          <span>黄骅火车票代售点：</span>在学校北门乘6路、901路公交车至耀华商厦站下车，换乘3路公交车至骨科医院站下车，北行100米右转，新海路路南。
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

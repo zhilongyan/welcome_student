@@ -1,0 +1,83 @@
+
+<!--个人信息展示-->
+<view class='container'>
+  <view class="personal_info">
+    <view class="user-name">
+      <view class="nickname">
+        姓名：{{info.name}}
+      </view>
+      <view class="Student-ID">
+        学号：{{info.studentnum}}
+      </view>
+    </view>
+    <view class="edit" bindtap="edit">
+      <button type="default" class="editButton">编辑</button>
+    </view>
+  </view>
+  <view class="wode_item_wrap last">
+      <view class="wode_item">
+      以下信息是否公开
+   
+        <switch class="switch" checked="{{infopub}}" bindchange="switchChange"/>
+ 
+    </view>
+    <!--<view class="wode_item">
+      民族
+      <view class="wode_item_Info">{{info.nation}}</view>
+    </view>-->
+    <view class="wode_item">
+      性别
+      <view class="wode_item_Info">{{info.sex}}</view>
+    </view>
+      <view class="wode_item">
+      学校
+      <view class="wode_item_Info">{{info.university}}</view>
+    </view>
+     <view class="wode_item">
+      学院
+      <view class="wode_item_Info">{{info.xueyuan}}</view>
+    </view>
+    <view class="wode_item">
+      专业
+      <view class="wode_item_Info">{{info.majorname}}</view>
+    </view>
+    <view class="wode_item">
+      班级
+      <view class="wode_item_Info">{{info.class}}</view>
+    </view>
+
+     <view class="address">
+      <text>地区</text>
+      <view class="addressLast">{{info.address}}</view>
+    </view>
+  </view>
+  <view class="wode_item_wrap">
+
+    <view class="wode_item">
+      手机
+      <view class="wode_item_Info">{{info.phone}}
+        <text class="modify" bindtap="modify">改绑</text>
+      </view>
+    </view>
+    <view class="wode_item">
+      QQ
+      <view class="wode_item_Info">{{info.qq}}</view>
+    </view>
+    <view class="wode_item">
+      邮箱
+      <view class="wode_item_Info">{{info.mail}}</view>
+    </view>
+    <view class="wode_item last">
+      微信
+      <view class="wode_item_Info">{{info.wechat}}</view>
+    </view>
+  </view>
+  <view class="tag">
+    <text class="tagTitle">个性标签</text>
+    <view class="tagName">
+      <block wx:for="{{tag}}">
+        <text>{{item.name}}</text>
+      </block>
+    </view>
+  </view>
+</view>

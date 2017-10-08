@@ -1,0 +1,105 @@
+/* pages/me/character/character.wxss */
+
+.characterSwiper {
+  position: fixed;
+  bottom: 0;
+  height: 400rpx;
+  width: 100%;
+}
+
+.characterItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.characterNameView {
+  background-color: #ccc;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.characterName {
+  font-size: large;
+  color: #666;
+  margin: 0 20rpx;
+}
+
+.characterIntroduce {
+  font-size: small;
+  color: #666;
+}
+
+.characterItem {
+  margin: 10rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.characterItem text {
+  width: 23%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1rpx solid #666;
+  margin: 4px 3rpx;
+  font-size: small;
+  /*background-color: yellow*/
+}
+
+.characterItemColor {
+  background-color: yellow;
+}
+
+.title {
+  font-size: small;
+  height: 50rpx;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10rpx;
+}
+
+.keep {
+  margin-right: 20rpx;
+  font-size: 40rpx;
+  color: rgb(153, 204, 255);
+  /*font-weight: rpx;*//*border: 1rpx solid #eee ;*/
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.characterContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10rpx 20rpx;
+}
+
+.characterContent .characterContentName {
+  width: 45%;
+  border: 1rpx solid #ccc;
+  margin: 5rpx;
+  height: 60rpx;
+  padding: 0 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(153, 204, 255, 0.5);
+}
+
+.characterContentName text {
+  z-index: -1;
+}
+
+.characterIcon {
+  display: flex;
+  align-content: center;
+  z-index: -1;
+}

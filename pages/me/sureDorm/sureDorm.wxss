@@ -1,0 +1,11 @@
+/* pages/me/suerDorm/sureDorm.wxss */
+.container{
+  justify-content: center;
+  align-items: center;
+}
+
+.big{
+  font-size: 55rpx;
+  color: blue;
+  font-weight: bold
+}

@@ -1,0 +1,10 @@
+/* pages/me/sfzsexample/sfzsexample.wxss */
+
+image {
+  width: calc(100vw - 45rpx);
+  height: 800rpx;
+  margin: 20rpx auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}

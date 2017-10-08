@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="head">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="body">
+    <view class="title">
+      <view class="hosterTitle {{hotelStatus ? 'active' : ''}}" bindtap="changeTrue">酒店住宿</view>
+      <view class="foodTitle {{hotelStatus ? '' : 'active'}}" bindtap="changeFalse">美食推荐
+      </view>
+    </view>
+    <view class="hostelMessage" hidden="{{!hotelStatus}}">
+      <view class=" message">
+        <block wx:for="{{hotel}}">
+          <view class="item" data-id="{{item.id}}" bindtap="turn" data-status="1">
+            <view class="picture">
+              <image src="{{item.hotelimg}}"></image>
+            </view>
+            <view class="content">
+              <text class="name">{{item.hotelname}}</text>
+              <text>价格区间：{{item.lowprice}} — {{item.highprice}}</text>
+              <text class="address">{{item.address}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="foodMessage" hidden="{{hotelStatus}}">
+      <view class=" message">
+        <block wx:for="{{food}}">
+          <view class="item" data-id="{{item.id}}" bindtap="turn" data-status="2">
+            <view class="picture">
+              <image src="{{item.restimg}}"></image>
+            </view>
+            <view class="content">
+              <text class="name">{{item.restname}}</text>
+              <text class="address">{{item.address}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,71 @@
+page{
+  background-color: #fbf9fe;
+}
+
+.content {
+  height: 100vh;
+}
+
+.message {
+  border: 1px solid #eee;
+  box-shadow: 10rpx 10rpx 10rpx 5rpx #ccc;
+  margin: 20rpx 30rpx;
+  display: block;
+  padding: 0 20rpx;
+  background-color: #fff;
+  width: 650rpx
+}
+
+
+.messageBody {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 20rpx 10rpx 20rpx;
+}
+
+.messageTitle {
+  margin: 20rpx 0;
+  font-size: 44rpx;
+  width: 610rpx;
+}
+
+.messageContent {
+  color: #5d5d5d;
+  font-size: 30rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 50rpx;
+  line-height: 50rpx;
+  width: 610rpx;
+}
+
+.upStatus {
+  color: #666;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downStatus {
+  text-align: center;
+  color: #666;
+}
+
+.answerCon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}

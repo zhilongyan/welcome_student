@@ -1,0 +1,79 @@
+<!--pages/myClass/myLeader.wxml-->
+
+<!--导员介绍栏-->
+<view class="container">
+    <block wx:if="{{teacherStatus}}">
+        <view class="content">
+            <view class="head">
+                <view class="message">
+                    <text class="name">{{teacher.name}}</text>
+                    <text class="job">导员</text>
+                </view>
+                <view class="img">
+                    <image src="/image/touxiang.jpg" wx:if="{{teacher.face==null}}"></image>
+                    <image src="{{teacher.face}}" wx:else></image>
+                </view>
+            </view>
+            <view class="body">
+                <view class="phone bodyView">
+                    <text class="bodyName">电话</text>
+                    <text bindtap="callNum" class="callNum" data-phone="{{teacher.phone}}" wx:if="{{teacher.phone}}">{{teacher.phone}}</text>
+                    <text class="callNum" wx:else></text>
+                </view>
+                <view class="qq bodyView">
+                    <text class="bodyName">QQ</text>
+                    <text class="bodyContent">{{teacher.qq}}</text>
+                </view>
+                <view class="wechat bodyView">
+                    <text class="bodyName">微信</text>
+                    <text class="bodyContent">{{teacher.wechat}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="info">
+            <text class="bodyName">个人介绍：</text>
+            <text class="infoMessage" wx:if="{{!teacher.teainfo}}">导员还未留下任何信息</text>
+            <text wx:else>{{teacher.teainfo}}</text>
+        </view>
+    </block>
+    <block wx:else>
+        <text class="noManage">导员还未分配，敬请期待！</text>
+    </block>
+    <block wx:if="{{studentStatus}}">
+        <view class="content">
+            <view class="head">
+                <view class="message">
+                    <text class="name">{{student.name}}</text>
+                    <text class="job">小班</text>
+                </view>
+                <view class="img">
+                    <image src="/image/touxiang.jpg" wx:if="{{student.face==null}}"></image>
+                    <image src="{{student.face}}" wx:else></image>
+                </view>
+            </view>
+            <view class="body">
+                <view class="phone bodyView">
+                    <text class="bodyName">电话</text>
+                    <text bindtap="callNum" class="callNum" data-phone="{{student.phone}}" wx:if="{{student.phone}}">{{student.phone}}</text>
+                    <text bindtap="callNum" class="callNum" wx:else></text>
+                </view>
+                <view class="qq bodyView">
+                    <text class="bodyName">QQ</text>
+                    <text class="bodyContent">{{student.qq}}</text>
+                </view>
+                <view class="wechat bodyView">
+                    <text class="bodyName">微信</text>
+                    <text class="bodyContent">{{student.wechat}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="info">
+            <text class="bodyName">个人介绍：</text>
+            <text class="infoMessage" wx:if="{{!student.subinfo}}">小班还未留下任何信息</text>
+            <text wx:else>{{student.subinfo}}</text>
+        </view>
+    </block>
+    <block wx:else>
+        <text class="noManage">小班还未分配，敬请期待！</text>
+    </block>
+</view>

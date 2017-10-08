@@ -1,0 +1,133 @@
+/* pages/me/payment/payment.wxss */
+
+page {
+  font-size: 30rpx;
+}
+
+.container {
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.head {
+  margin: 20rpx;
+}
+
+.money {
+  font-size: 40rpx;
+  color: blue;
+  margin: 0 10rpxp;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1;
+  margin: 10rpx 20rpx 50rpx;
+  overflow: hidden;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  width: 700rpx;
+  margin: 10rpx auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.list input {
+  border: 1px solid #e5e5e5;
+  height: 50rpx;
+  width: 500rpx;
+  padding-left: 5rpx;
+}
+
+.sureButton {
+  margin: 10rpx auto;
+  width: 700rpx;
+}
+
+.sureButton button {
+  width: 300rpx;
+  margin: 50rpx auto 0;
+}
+
+.img {
+  width: calc(100vw - 45rpx);
+  height: 800rpx;
+  border: 1rpx solid #666;
+  margin: 20rpx 0 ;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.img .sfzimg{
+  height: 800rpx;
+}
+
+.addHead {
+  font-size: 25rpx;
+}
+
+.examine {
+  position: absolute;
+  right: -10rpx;
+  transform: rotate(30deg);
+  font-size: 60rpx;
+  font-weight: bold;
+}
+
+.examineIng {
+  color: #929292;
+}
+
+.examined {
+  color: green;
+}
+
+.notExamine {
+  color: red;
+}
+
+.addMessage {
+  color: #929292;
+}
+
+.notSure {
+  color: red;
+  font-size: 35rpx;
+}
+
+.demand {
+  align-items: center;
+  flex-direction: column;
+}
+
+.addImg {
+  height: 100rpx;
+  width: 100rpx;
+  margin: 20rpx 0;
+}
+
+.red {
+  color: red;
+  margin-top: 10rpx
+}
+
+.example{
+  font-size: 20rpx;
+  color: blue;
+  text-decoration: underline;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10rpx;
+}

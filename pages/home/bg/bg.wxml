@@ -1,0 +1,26 @@
+<view>
+  <view>
+    <view class="yinshui00">{{ message00 }}</view>
+    <view class="yinshui01">{{ message01 }}</view>
+    <view class="yinshui02">{{ message02 }}</view>
+    <view class="yinshui03">{{ message03 }}</view>
+    <view class="yinshui04">{{ message04 }}</view>
+    <view class="yinshui05">{{ message05 }}</view>
+    <view class="yinshui06">{{ message06 }}</view>
+  </view>
+  <view>
+    <view class="yushi10">{{ message10 }}</view>
+    <view class="yushi11">{{ message11 }}</view>
+    <view class="yushi12">{{ message12 }}</view>
+    <view class="yushi13">{{ message13 }}</view>
+    <view class="yushi14">{{ message14 }}</view>
+    <view class="yushi15">{{ message15 }}</view>
+  </view>
+  <view>
+    <view class="canting20">{{ message20 }}</view>
+    <view class="canting21">{{ message21 }}</view>
+    <view class="canting22">{{ message22 }}</view>
+    <view class="canting23">{{ message23 }}</view>
+    <view class="canting24">{{ message24 }}</view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+
+<!--pages/home/information/information.wxml-->
+<view class="title">{{title}}</view>
+<view class="date">{{time}}</view>
+<view class="content">
+  <block wx:for="{{content}}">
+    <text>{{item.content}}</text>
+    <image src="{{item.img}}" hidden="{{item.img == null}}" mode="widthFix"></image>
+  </block>
+</view>
